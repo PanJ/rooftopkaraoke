@@ -105,6 +105,10 @@ class App extends Component {
             )
           }
         </div>
+        {
+          this.state.base64 !== '' && this.state.renderedBase64 === '' &&
+          <p style={{color: '#999999', fontSize: '12px', marginTop: '10px', textAlign: 'center'}}>แนะนำให้ใช้งานด้วย Chrome บนคอมพิวเตอร์ อาจไม่สามารถดาวน์โหลดภาพได้ใน Browser อื่นๆ สามารถใช้การ Capture หน้าจอเพื่อนำภาพไปใช้ได้ </p>
+        }
         { this.state.renderedBase64 && this.state.renderedBase64 !== '' &&
           <div className="text-center form-group">
             <a className="btn btn-lg btn-primary" href={this.state.renderedBase64} download="rooftop-karaoke.png"
