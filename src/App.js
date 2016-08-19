@@ -8,8 +8,8 @@ class App extends Component {
     en: '',
     thBar: 50,
     enBar: 50,
-    thFont: 25,
-    enFont: 15,
+    thFont: 28,
+    enFont: 18,
     base64: '',
     renderedBase64: ''
   }
